@@ -8,6 +8,9 @@ public class PersonTest {
        ClassPathXmlApplicationContext ctx = 
     		       new ClassPathXmlApplicationContext("PersonConfig.xml");
         Person p = ctx.getBean(Person.class);
+        
+        p.getJob().dowork();
+        
         System.out.println(p.getAge());
         System.out.println(p.getId());
         System.out.println(p.getName());

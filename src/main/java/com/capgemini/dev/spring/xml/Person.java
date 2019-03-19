@@ -5,6 +5,14 @@ public class Person {
 	private int id;
 	private String name;
 	private double age;
+	private Job job;
+	
+	public Job getJob() {
+		return job;
+	}
+	public void setJob(Job job) {
+		this.job = job;
+	}
 	public int getId() {
 		return id;
 	}
