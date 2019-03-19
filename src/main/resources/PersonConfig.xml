@@ -7,12 +7,13 @@
 		<property name="id" value="101"></property>
 		<property name="name" value="Baba"></property>
 		<property name="age" value="23"></property>
-		<property name="job" ref="tester"></property>
+		<property name="job" ref="singer"></property>
 	</bean>
 	
 	<bean id="developer" class="com.capgemini.dev.spring.xml.SoftwareDeveloper"></bean>
 	
 	<bean id="tester" class="com.capgemini.dev.spring.xml.SoftwareTester"></bean>
 	
+	<bean id="singer" class="com.capgemini.dev.spring.xml.Singer"></bean>
 
 </beans>
