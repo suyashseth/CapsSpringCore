@@ -5,6 +5,15 @@ public class Dog {
 	private String name;
 	private String breed;
 	private String color;
+	private Job job;
+	
+
+	public Job getJob() {
+		return job;
+	}
+	public void setJob(Job job) {
+		this.job = job;
+	}
 	public String getName() {
 		return name;
 	}
