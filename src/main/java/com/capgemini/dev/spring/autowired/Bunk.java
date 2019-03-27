@@ -1,4 +1,4 @@
-package com.capgemini.dev.spring.autowire;
+package com.capgemini.dev.spring.autowired;
 
 import javax.inject.Named;
 
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 //@Component
-@Named("bunk")
+@Named
 @Primary
 public class Bunk implements Job{
 

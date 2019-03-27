@@ -1,7 +1,16 @@
 package com.capgemini.dev.spring.core;
 
+import org.springframework.stereotype.Component;
+
+
 public class Person {
 
+	public String passName()
+	{
+		return "Pooja";
+	}
+	
+	
 	private int id;
 	private String name;
 	private Job job;

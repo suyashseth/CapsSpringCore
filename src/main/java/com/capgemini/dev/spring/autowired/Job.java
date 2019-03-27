@@ -1,4 +1,4 @@
-package com.capgemini.dev.spring.autowire;
+package com.capgemini.dev.spring.autowired;
 
 public interface Job {
 

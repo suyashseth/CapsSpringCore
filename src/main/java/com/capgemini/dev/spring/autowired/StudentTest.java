@@ -1,4 +1,4 @@
-package com.capgemini.dev.spring.autowire;
+package com.capgemini.dev.spring.autowired;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -7,8 +7,21 @@ public static void main(String[] args) {
 	
 	AnnotationConfigApplicationContext ctx = 
 			new AnnotationConfigApplicationContext(StudentCofig.class);
-	Student s = ctx.getBean(Student.class);
-	s.getJ().doWork();
+	Students s = ctx.getBean(Students.class);
+	System.out.println(s);
+//	s.getJ().doWork();
+	
+//	String [] bean = ctx.getBeanDefinitionNames();
+//	
+//	for(String b:bean)
+//	{
+//		System.out.println(b);
+//	}
+	
+	
+	
+	
+	
 	ctx.close();
 	
 }

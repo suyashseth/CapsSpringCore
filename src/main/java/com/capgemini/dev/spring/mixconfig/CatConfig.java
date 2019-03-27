@@ -1,10 +1,11 @@
-package com.capgemini.dev.spring.autowire;
+package com.capgemini.dev.spring.mixconfig;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages="com.capgemini.dev.spring.autowire")
-public class StudentCofig {
+@ComponentScan
+public class CatConfig {
 
+	
 }

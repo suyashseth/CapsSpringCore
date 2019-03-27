@@ -8,6 +8,8 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/resources/PersonConfig.xml</config>
+		<config>src/main/resources/CatConfig.xml</config>
+		<config>src/main/resources/TigerConfig.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

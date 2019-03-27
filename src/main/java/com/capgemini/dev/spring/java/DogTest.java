@@ -7,8 +7,13 @@ public class DogTest {
 
 		AnnotationConfigApplicationContext ctx = 
 				new AnnotationConfigApplicationContext(DogConfig.class);
-		Dog d = ctx.getBean(Dog.class);
-		d.getJob().doWork();
+		
+		String []beans = ctx.getBeanDefinitionNames();
+		for(String bean:beans)
+		{
+			System.out.println(bean);
+		}
+		
 		ctx.close();
 
 	}

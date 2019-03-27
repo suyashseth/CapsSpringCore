@@ -1,12 +1,28 @@
 package com.capgemini.dev.spring.java;
 
-public class Dog {
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.springframework.beans.factory.BeanNameAware;
+
+public class Dog implements BeanNameAware {
 
 	private String name;
 	private String breed;
 	private String color;
 	private Job job;
 	
+	@PostConstruct
+	public void init()
+	{
+		System.out.println("Custom Init Method");
+	}
+	
+	@PreDestroy
+	public void destroy()
+	{
+		System.out.println("Custom Destroy");
+	}
 
 	public Job getJob() {
 		return job;
@@ -35,6 +51,11 @@ public class Dog {
 	@Override
 	public String toString() {
 		return "Dog [name=" + name + ", breed=" + breed + ", color=" + color + "]";
+	}
+
+	@Override
+	public void setBeanName(String name) {
+		System.out.println("Name of Bean :"+name);
 	}
 	
 }
